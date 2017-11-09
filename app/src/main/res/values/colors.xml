@@ -1,6 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryDark">#105897</color>
+    <color name="colorAccent">#050505</color>
+
+    <color name="colorPrimaryGetnet">#898989</color>
+    <color name="colorPrimaryDarkGetnet">#690000</color>
+    <color name="colorAccentGetnet">#930d0d</color>
+
+
+    <color name="colorPrimaryBin">#898989</color>
+    <color name="colorPrimaryDarkBin">#962d00</color>
+    <color name="colorAccentBin">#ff6a00</color>
+
+    <color name="colorPrimaryCielo">#898989</color>
+    <color name="colorPrimaryDarkCielo">#004db3</color>
+    <color name="colorAccentCielo">#014aa4</color>
+
+    <color name="colorPrimaryRede">#898989</color>
+    <color name="colorPrimaryDarkRede">#894501</color>
+    <color name="colorAccentRede">#ff7902</color>
+
+    <color name="colorPrimaryStone">#898989</color>
+    <color name="colorPrimaryDarkStone">#174800</color>
+    <color name="colorAccentStone">#6abc34</color>
+
+    <color name="colorPrimaryElavon">#898989</color>
+    <color name="colorPrimaryDarkElavon">#002648</color>
+    <color name="colorAccentElavon">#347dbc</color>
+
+    <color name="colorPrimarymoderninhaPro">#898989</color>
+    <color name="colorPrimaryDarkmoderninhaPro">#998000</color>
+    <color name="colorAccentmoderninhaPro">#329b02</color>
+
+    <color name="colorPrimaryIzettle">#898989</color>
+    <color name="colorPrimaryDarkIzettle">#2052d9</color>
+    <color name="colorAccentIzettle">#5e00ff</color>
+
+    <color name="colorPrimarySumup">#898989</color>
+    <color name="colorPrimaryDarkSumup">#0094d9</color>
+    <color name="colorAccentSumup">#FF3F5F6E</color>
+
+    <color name="verde_alerta">#03ab00</color>
+    <color name="vermelho_alerta">#ab0000</color>
+    <color name="branco">#fff</color>
+    <color name="alert_esqueci">#073e87</color>
+
+    <color name="login">#c8267df7</color>
+    <color name="loginAccent">#ed9c45</color>
+
+    <color name="primary">#6abc34</color>
+
+    <color name="intro">#024691</color>
+    <color name="toolbarEstabelecimento">#024691</color>
+
+    <color name="colorPrimaryLogar">#0066ff</color>
+    <color name="colorPrimaryDarkLogar">#014aa4</color>
+    <color name="colorAccentLogar">#d5d7dc</color>
+
+    <!-- SwipeRefreshLayout -->
+    <color name="refresh_progress_1">#33B5E5</color>
+    <!-- azul -->
+    <color name="refresh_progress_2">#99CC00</color>
+    <!-- verde -->
+    <color name="refresh_progress_3">#CC0000</color>
+    <!-- vermelho -->
+
+
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <color name="view_divider_color">#BABABA</color>
+    <color name="view_divider_color_2">#DADADA</color>
+
+    <color name="teste">#bfaf5814</color>
+    <color name="black">#000</color>
+
+
+    <color name="sample_focused">#CC0000</color>
+    <color name="sample_disabled_pressed">#ccc</color>
+    <color name="sample_disabled_not_pressed">#006fff</color>
+    <color name="sample_default">#fff700</color>
+
+
+
+    <!-- Cores do Rodapé -->
+    <color name="color_tab_1">#006fff</color>
+    <color name="color_tab_2">#CC0000</color>
+    <color name="color_tab_3">#117106</color>
+    <color name="color_tab_4">#bfbfbf</color>
+    <color name="color_tab_5">#ff7c01</color>
+
+    <!--<color name="color_tab_5">#747474</color> -->
 </resources>

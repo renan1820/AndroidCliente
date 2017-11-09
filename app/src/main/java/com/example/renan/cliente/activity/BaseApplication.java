@@ -1,5 +1,7 @@
 package com.example.renan.cliente.activity;
 
+import android.content.Context;
+import android.net.ConnectivityManager;
 import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
@@ -14,22 +16,25 @@ public class BaseApplication extends livroandroid.lib.activity.BaseActivity {
 
     // Configura a Toolbar
     protected void setUpToolbar(String titulo) {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         TextView titulo_toolbar = (TextView) findViewById(R.id.text_toolbar);
         //Botao de Retorno
         if(toolbar != null){
             setSupportActionBar(toolbar);
             toolbar.setTitle(" ");
             titulo_toolbar.setText(titulo);
-            //toolbar.setNavigationIcon(R.drawable.abc_ic_ab_back_material);
-            //toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            //    @Override
-            //    public void onClick(View v) {
-            //        finish();
-//
-            //    }
-            //});
-            //toolbar.inflateMenu(R.menu.main);
         }
+    }
+
+    protected boolean verificaConexao(){
+
+        ConnectivityManager conectivtyManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert conectivtyManager != null;
+        if(conectivtyManager.getActiveNetworkInfo() != null
+                && conectivtyManager.getActiveNetworkInfo().isAvailable()
+                && conectivtyManager.getActiveNetworkInfo().isConnected()) {
+            return true;
+        }
+        return false;
     }
 }
