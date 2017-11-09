@@ -19,6 +19,7 @@ public class BaseApplication extends livroandroid.lib.activity.BaseActivity {
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         TextView titulo_toolbar = (TextView) findViewById(R.id.text_toolbar);
         //Botao de Retorno
+
         if(toolbar != null){
             setSupportActionBar(toolbar);
             toolbar.setTitle(" ");
