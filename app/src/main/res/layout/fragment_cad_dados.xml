@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/img_cad"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="160dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/campo_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm -"
+            android:maxLength="500"
+            android:inputType="text"
+            android:textColor="#000" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/textInputLayout6">
+
+            <EditText
+                android:id="@+id/campo_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Celular"
+                android:textAllCaps="true"
+                android:inputType="number"
+                android:textColor="#000" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout6">
+
+            <EditText
+                android:id="@+id/campo_cpf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CPF"
+                android:inputType="number"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/textInputLayout7">
+
+            <EditText
+                android:id="@+id/campo_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/textInputLayout7">
+
+            <EditText
+                android:id="@+id/campo_nasc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dt. Nasc."
+                android:inputType="date"
+                android:singleLine="true"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/spinner_sexo">
+
+            <EditText
+                android:id="@+id/campo_apelido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apelido"
+                android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-"
+                android:maxLength="50"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/spinner_sexo"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/enviar"
+            android:background="#ffffff"
+            android:textColor="#ff6200"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Próximo" />
+    </RelativeLayout>
+
+
+</LinearLayout>

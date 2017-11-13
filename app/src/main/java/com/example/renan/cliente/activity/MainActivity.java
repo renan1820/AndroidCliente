@@ -12,8 +12,6 @@ import android.widget.Toast;
 import com.example.renan.cliente.R;
 import com.example.renan.cliente.fragment.InicioFragment;
 
-import static com.example.renan.cliente.domain.Ids.TELA_INCIAL;
-
 
 public class MainActivity extends BaseApplication {
 
@@ -25,7 +23,6 @@ public class MainActivity extends BaseApplication {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setUpToolbar(TELA_INCIAL);
 
         PackageInfo pInfo = null;
         try {

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/img_cad"
+        android:src="@drawable/fundo_senha"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="160dp" />
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="6dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Escolha sua região de participação"
+                android:textAlignment="center"
+                android:textColor="#041a65"
+                android:textSize="21dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/campo_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="Senha"
+            android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 1234567890-_=+!@#$%¨*()_´[]~/;:?^}{`\|"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/campo_confsenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:hint="Confirme Senha"
+            android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 1234567890-_=+!@#$%¨*()_´[]~/;:?^}{`\|"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#000" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/concluir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:text="Concluir"
+            android:textColor="#ff6200" />
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Li e aceito os "
+            android:layout_alignBaseline="@+id/textTermo"
+            android:layout_alignBottom="@+id/textTermo"
+            android:layout_toStartOf="@+id/textTermo" />
+
+        <TextView
+            android:id="@+id/textTermo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:textSize="12dp"
+            android:textColor="#003cc7"
+            android:text="termos de uso"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text=" do contrato."
+            android:layout_alignBaseline="@+id/textTermo"
+            android:layout_alignBottom="@+id/textTermo"
+            android:layout_toEndOf="@+id/textTermo" />
+
+        <CheckBox
+            android:id="@+id/termo_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text2"
+            android:layout_alignBottom="@+id/text2"
+            android:layout_toEndOf="@+id/text2" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

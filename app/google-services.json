@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "404731232725",
+    "firebase_url": "https://value-travel-v4.firebaseio.com",
+    "project_id": "value-travel-v4",
+    "storage_bucket": "value-travel-v4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404731232725:android:eb5db2afea13a358",
+        "android_client_info": {
+          "package_name": "com.example.renan.cliente"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404731232725-rq30eqd0pj1aq35ej9453efgh9vvrj2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUVDLnpZTsDGACpX7WaGptpiqlNDwgnuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

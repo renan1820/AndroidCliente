@@ -1,3 +1,143 @@
 <resources>
     <string name="app_name">Cliente</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="cpf">CPF</string>
+    <string name="senha_antiga">Digite sua senha <b>ANTIGA</b></string>
+    <string name="senha_nova">Digite nova senha</string>
+    <string name="confirma_senha_nova">Confirmar senha <b>NOVA</b></string>
+    <string name="alterar">Alterar</string>
+    <string name="alterar_senha">Alterar senha</string>
+    <string name="senha_digita">Digite as senhas corretamente</string>
+    <string name="senha_erro">Senha antiga errada</string>
+
+    <string name="senha">Esqueci minha senha<u>underline</u>.</string>
+    <string name="cadastro_sucesso">Cadastro realizado com sucesso.</string>
+    <string name="login_sucesso">Login realizado com sucesso.</string>
+    <string name="alerta">Alerta ao usuário</string>
+    <string name="senha_esqueci">Esqueci senha</string>
+    <string name="txt_cpf_base">CPF</string>
+    <string name="celular">Digite seu número</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="enviar">Enviar</string>
+    <string name="ok">Ok</string>
+
+    <string name="no_internet_connection">Sem conexão com a Internet</string>
+    <string name="time_out">Tempo expirado, tente novamente</string>
+    <string name="error_occured">Ocorreu um Erro</string>
+    <string name="txt_image_slider">Imagens</string>
+    <string name="product_name">Produto</string>
+
+    <string-array name="estados">
+        <item>Escolha Operadora do Cartão...</item>
+        <item>Bin</item>
+        <item>Cielo</item>
+        <item>Cupom fiscal</item>
+        <item>Getnet</item>
+        <item>Rede</item>
+        <item>Stone</item>
+        <item>Elavon</item>
+        <item>Moderninha Pro</item>
+        <item>Izettle</item>
+        <item>Sum up</item>
+        <item>Outros ...</item>
+    </string-array>
+
+    <string name="tab_colors">
+        <item></item>
+    </string>
+    <string-array name="estado">
+        <item>Escolha seu estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PR</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SP</item>
+        <item>SE</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="sexo">
+        <item>Escolha seu sexo</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+    <string name="video">Vídeo</string>
+    <string name="latitudeLongitude">Lat / Lng</string>
+    <string name="mapa">Mapa</string>
+    <string name="descricao">Descrição</string>
+    <string name="informacao">Informações</string>
+
+    <string name="tela1">tela1</string>
+    <string name="tela2">tela2</string>
+    <string name="tela3">tela3</string>
+    <string name="tela4">tela4</string>
+
+
+    <!-- Acre (AC)
+    Alagoas (AL)
+    Amapá (AP)
+    Amazonas (AM)
+    Bahia (BA)
+    Ceará (CE)
+    Distrito Federal (DF)
+    Espírito Santo (ES)
+    Goiás (GO)
+    Maranhão (MA)
+    Mato Grosso (MT)
+    Mato Grosso do Sul (MS)
+    Minas Gerais (MG)
+    Pará (PA)
+    Paraíba (PB)
+    Paraná (PR)
+    Pernambuco (PE)
+    Piauí (PI)
+    Rio de Janeiro (RJ)
+    Rio Grande do Norte (RN)
+    Rio Grande do Sul (RS)
+    Rondônia (RO)
+    Roraima (RR)
+    Santa Catarina (SC)
+    São Paulo (SP)
+    Sergipe (SE)
+    Tocantins (TO)
+-->
+
+    <string-array name="cidades">
+        <item>Esolha Operadora do Cartão...</item>
+        <item>Taubaté</item>
+        <item>Pinda</item>
+        <item>SJC</item>
+
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="msg_alerta_permissao">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
+    <string name="sem_conexao">Verifique sua conexão a Internet.</string>
 </resources>

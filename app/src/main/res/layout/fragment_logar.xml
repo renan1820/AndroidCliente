@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_cad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2681f7"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="#fff"
+            android:textAlignment="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acesse sua conta"
+                android:textColor="#fff"
+                android:textStyle="italic"
+                android:textSize="20dp"/>
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        layout="@layout/fragment_tela_logar" />
+
+
+
+</LinearLayout>

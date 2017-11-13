@@ -1,6 +1,7 @@
 package com.example.renan.cliente.fragment;
 
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -14,16 +15,22 @@ import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.renan.cliente.R;
 import com.example.renan.cliente.Util.CheckNetworkConnection;
 import com.example.renan.cliente.Util.JSONfunctions;
 import com.example.renan.cliente.Util.TratamentoImagem;
+import com.example.renan.cliente.domain.Ids;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.net.URLDecoder;
+
+import static com.example.renan.cliente.R.drawable;
+import static com.example.renan.cliente.R.id;
+import static com.example.renan.cliente.R.layout;
 
 /**
  * Created by Hermanos 04 on 09/11/2017.
@@ -39,37 +46,49 @@ public class InicioFragment extends BaseFragment {
     String codcliente,saldopendente,saldoefetivado,apelido,nome, notificacao,foto;
 
 
+    android.support.v7.app.ActionBar actionBar;
+
+
     JSONObject jsonObject;
     JSONArray jsonArray;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view  = inflater.inflate(R.layout.activity_carregar,container,false);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         cpf = getArguments().getString("cpf");
         senha = getArguments().getString("senha");
         version = getArguments().getString("version");
+    }
 
-
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view  = inflater.inflate(layout.fragment_carregar,container,false);
 
         Log.i("Login Automatico"," Cpf: "+cpf+ " senha: "+senha);
         //Log.i("Token",FirebaseInstanceId.getInstance().getToken());
 
         TratamentoImagem carregar = new TratamentoImagem();
 
-        intro_value = (ImageView) view.findViewById(R.id.intro_value);
-        intro_value.setImageBitmap(carregar.carregarBitmap(intro_value.getMaxHeight(),intro_value.getMaxWidth(),R.drawable.teste_logo2, getResources()));
+        intro_value = (ImageView) view.findViewById(id.intro_value);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            intro_value.setImageBitmap(carregar.carregarBitmap(intro_value.getMaxHeight(),intro_value.getMaxWidth(), drawable.teste_logo2, getResources()));
+        }else{
+            Toast.makeText(getContext(), "Não é possivel carregar imagens, devido a versão de seu android.", Toast.LENGTH_SHORT).show();
+        }
 
 
-        progress = (ProgressBar) view.findViewById(R.id.progress);
+        progress = (ProgressBar) view.findViewById(id.progress);
         //intro_cdl = (ImageView) findViewById(R.id.intro_cdl);
-        bemvindo =(TextView) view.findViewById(R.id.bemvindo);
+        bemvindo =(TextView) view.findViewById(id.bemvindo);
 
-        versao = (TextView) view.findViewById(R.id.versao);
+        versao = (TextView) view.findViewById(id.versao);
         versao.setText("Versão "+ version);
 
-        back_intro = (ImageView) view.findViewById(R.id.back_intro);
+        back_intro = (ImageView) view.findViewById(id.back_intro);
 
-        back_intro.setImageBitmap(carregar.carregarBitmap(back_intro.getMaxHeight(),back_intro.getMaxWidth(),R.drawable.fundo_inicio, getResources()));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            back_intro.setImageBitmap(carregar.carregarBitmap(back_intro.getMaxHeight(),back_intro.getMaxWidth(), drawable.fundo_inicio, getResources()));
+        }
 
         try {
             intro_value.clearAnimation();
@@ -97,14 +116,14 @@ public class InicioFragment extends BaseFragment {
         back_intro.startAnimation(animation3);
 
         if(CheckNetworkConnection.isConnectionAvailable(getContext())){
-            //new Login().execute();
+            new Login().execute();
         }else{
-            snack(getView(),"Verifique sua conexão a Internet");
+            snack(getView(),R.string.sem_conexao);
             FragmentManager fragmentManager = getFragmentManager();
             FragmentTransaction t = fragmentManager.beginTransaction();
-            //EntrarFragment f = new EntrarFragment();
-            //t.replace(R.id.container,f,"Entrar");
-            //t.commit();
+            EntrarFragment f = new EntrarFragment();
+            t.replace(R.id.container,f, Ids.TELA_ENTRAR);
+            t.commit();
         }
 
         return view;
@@ -165,23 +184,19 @@ public class InicioFragment extends BaseFragment {
         @Override
         protected void onPostExecute(Void result) {
 
-
-
             progress.setVisibility(View.GONE);
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
 
-
                     FragmentManager fragmentManager = getFragmentManager();
                     FragmentTransaction t = fragmentManager.beginTransaction();
-
 
                     EntrarFragment f = new EntrarFragment();
 
                     Log.i("coderro"," "+coderro);
                     if(coderro.equals("1")){
-                        t.replace(R.id.container,f,"Entrar");
+                        t.replace(id.container,f,Ids.TELA_ENTRAR);
                         t.commit();
                     }else{
 

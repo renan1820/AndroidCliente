@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/icon_cep">
+
+                <EditText
+                    android:id="@+id/campo_cep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:hint="CEP"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/icon_cep"
+                android:textSize="12dp"
+                android:background="#fff"
+                android:textColor="#077000"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:text="Verificar"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/textInputLayout6">
+
+            <EditText
+                android:id="@+id/campo_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:hint="Endereço"
+                android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-"
+                android:maxLength="500"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout8">
+
+                <EditText
+                    android:id="@+id/campo_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:textSize="12dp"
+                    android:hint="Número"
+                    android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-/"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout7"
+                android:layout_toEndOf="@+id/textInputLayout8">
+
+                <EditText
+                    android:id="@+id/campo_compl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="200"
+                    android:textSize="12dp"
+                    android:hint="Complemento"
+                    android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-/"
+
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/campo_bairro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-"
+                android:hint="Bairro"
+                android:inputType="text"
+                android:maxLength="200"
+
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/campo_cidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="200"
+                android:digits="QqWwEeêéèÊÉÈRrTtYyUuÚÙùúÛûIiíìÍÌÎîOoõÕÔôÓÒóòPpAaãáÃÂÁâàÀSsDdFfGgHhJjKkLlÇçZzXxCcVvBbNnMm 0123456789!@#$%¨*()_,.-"
+
+                android:textSize="12dp"
+                android:hint="Cidade"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinner_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

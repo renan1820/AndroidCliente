@@ -3,6 +3,7 @@ package com.example.renan.cliente.activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.renan.cliente.R;
@@ -15,12 +16,13 @@ import com.example.renan.cliente.R;
 public class BaseApplication extends livroandroid.lib.activity.BaseActivity {
 
     // Configura a Toolbar
-    protected void setUpToolbar(String titulo) {
+    public void setUpToolbar(String titulo) {
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         TextView titulo_toolbar = (TextView) findViewById(R.id.text_toolbar);
         //Botao de Retorno
 
         if(toolbar != null){
+            toolbar.setVisibility(View.VISIBLE);
             setSupportActionBar(toolbar);
             toolbar.setTitle(" ");
             titulo_toolbar.setText(titulo);
@@ -38,4 +40,6 @@ public class BaseApplication extends livroandroid.lib.activity.BaseActivity {
         }
         return false;
     }
+
+
 }
